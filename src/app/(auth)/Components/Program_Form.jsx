@@ -1,7 +1,7 @@
 "use client";
 import React, { useState } from "react";
-import { CKEditor } from "@ckeditor/ckeditor5-react";
-import ClassicEditor from "@ckeditor/ckeditor5-build-classic";
+// import { CKEditor } from "@ckeditor/ckeditor5-react";
+// import ClassicEditor from "@ckeditor/ckeditor5-build-classic";
 import { FaChevronRight } from "react-icons/fa";
 import { FaHome } from "react-icons/fa";
 import Link from "next/link";
@@ -36,14 +36,14 @@ export default function Program_Form() {
           <h1>Title:</h1>
           <input type="text" required="true" className="w-full border-2 my-2" />
         </div>
-        <div>
+        {/* <div>
           <h1>Description</h1>
           <CKEditor
             editor={ClassicEditor}
             data={editorData}
             onChange={handleEditorChange}
           />
-        </div>
+        </div> */}
         <div className="mt-2">
           <input type="checkbox" id="scales" name="scales" />
           <label className="mx-2">Activate Status</label>

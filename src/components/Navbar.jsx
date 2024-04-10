@@ -14,7 +14,7 @@ export default function Navbar() {
 
   const pathname = usePathname();
 
-  console.log(pathname === "/Services", "rouyter");
+  console.log(pathname === "/Services");
 
   return (
     <div className="z-50 sticky top-0">

@@ -17,7 +17,7 @@ export default function ProgramPage() {
             height={1000}
             className=" w-full h-[350px] object-cover"
             quality={85}
-            alt=""
+            alt="my-img"
           />
           <div className=" ">
             <h1 className="text-white z-10 font-bold text-4xl absolute  top-[30%] left-[45%] ">

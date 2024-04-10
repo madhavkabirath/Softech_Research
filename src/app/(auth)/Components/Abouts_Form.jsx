@@ -1,7 +1,7 @@
 "use client"
 import React, { useState } from "react";
-import { CKEditor } from "@ckeditor/ckeditor5-react";
-import ClassicEditor from "@ckeditor/ckeditor5-build-classic";
+// import { CKEditor } from "@ckeditor/ckeditor5-react";
+// import ClassicEditor from "@ckeditor/ckeditor5-build-classic";
 import { FaChevronRight } from "react-icons/fa";
 import { FaHome } from "react-icons/fa";
 import Link from "next/link";
@@ -39,14 +39,14 @@ export default function Abouts_Form() {
           <h1>Sub-Title:</h1>
           <input type="text" required="true" className="w-full border-2 my-2" />
         </div>
-        <div>
+        {/* <div>
           <h1>Description</h1>
           <CKEditor
             editor={ClassicEditor}
             data={editorData}
             onChange={handleEditorChange}
           />
-        </div>
+        </div> */}
         <div className="w-full">
           <h1>Choose Image:</h1>
           <input type="file" required="true" accept="image/*" className="w-full border-2 my-2 " />

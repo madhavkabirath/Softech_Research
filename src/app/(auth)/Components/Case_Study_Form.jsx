@@ -1,7 +1,7 @@
 "use client";
 import React, { useState } from "react";
-import { CKEditor } from "@ckeditor/ckeditor5-react";
-import ClassicEditor from "@ckeditor/ckeditor5-build-classic";
+// import { CKEditor } from "@ckeditor/ckeditor5-react";
+// import ClassicEditor from "@ckeditor/ckeditor5-build-classic";
 import { FaChevronRight } from "react-icons/fa";
 import { FaHome } from "react-icons/fa";
 import Link from "next/link";
@@ -47,14 +47,14 @@ export default function Case_Study_Form() {
         </div>
         <div>
           <h1>Section one</h1>
-          <div>
+          {/* <div>
             <h1>Section 1 Description:</h1>
             <CKEditor
               editor={ClassicEditor}
               data={editorData}
               onChange={handleEditorChange}
             />
-          </div>
+          </div> */}
         </div>
         <div className="w-full">
           <h1 className="text-sm">Seection 1 Upload Multiple Image:</h1>
