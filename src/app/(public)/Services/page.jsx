@@ -32,6 +32,7 @@ export default function ServicesPage() {
                 width={1000}
                 height={500}
                 className="h-auto w-auto px-4"
+                alt="image"
               />
             </Link>
           </div>
@@ -63,6 +64,7 @@ export default function ServicesPage() {
                 width={1000}
                 height={500}
                 className="h-auto w-auto"
+                alt="image"
               />
             </Link>
           </div>
@@ -92,6 +94,7 @@ export default function ServicesPage() {
                 width={1000}
                 height={500}
                 className="h-auto w-auto overflow-hidden"
+                alt="image"
               />
             </Link>
           </div>

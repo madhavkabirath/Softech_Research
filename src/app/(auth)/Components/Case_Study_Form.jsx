@@ -65,7 +65,7 @@ export default function Case_Study_Form() {
             className="w-full border-2 my-2 "
           />
         </div>
-        <div>
+        {/* <div>
           <h1>Section two</h1>
 {/*           <div>
             <h1>Section 2 Description:</h1>
@@ -74,8 +74,10 @@ export default function Case_Study_Form() {
               data={editorData}
               onChange={handleEditorChange}
             />
+
           </div> */}
         </div>
+
         <div className="w-full">
           <h1 className="text-sm">Seection 2 Upload Multiple Image:</h1>
           <input
@@ -88,6 +90,7 @@ export default function Case_Study_Form() {
         <div>
           <h1>Section Three</h1>
 {/*           <div>
+
             <h1>Section 3 Description:</h1>
             <CKEditor
               editor={ClassicEditor}

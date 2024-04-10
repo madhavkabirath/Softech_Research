@@ -1,3 +1,4 @@
+import Image from "next/image";
 import Link from "next/link";
 
 const Navbar = () => {
@@ -8,7 +9,7 @@ const Navbar = () => {
           <div className="flex-shrink-0 justify-start">
             <Link href="/">
               <h1 className="flex items-center">
-                <img
+                <Image
                   className="block lg:hidden h-8 w-auto"
                   src="/logo.svg"
                   alt="Logo"

@@ -76,6 +76,7 @@ export default function Service2() {
                 width={1000}
                 height={500}
                 className="h-[400px] w-full  md:px-4"
+                alt="image"
               />
           </div>
           <p>

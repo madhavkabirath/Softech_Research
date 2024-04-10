@@ -18,7 +18,7 @@ const Category = () => {
                 width={400}
                 height={400}
                 className="w-full h-auto hover:scale-125 duration-500 ease-in-out"
-                alt=""
+                alt="image"
               />
             </Link>
             <p className="absolute bottom-3 right-3 bg-white text-black p-2">
@@ -34,6 +34,7 @@ const Category = () => {
                   width={600}
                   height={500}
                   className="h-auto hover:scale-125 duration-500 ease-in-out overflow-hidden"
+                  alt="image"
                 />
               </Link>
               <p className="absolute bottom-3 right-3 bg-white text-black p-2">
@@ -48,6 +49,7 @@ const Category = () => {
                   width={600}
                   height={600}
                   className="h-auto hover:scale-125 duration-500 ease-in-out overflow-hidden"
+                  alt="image"
                 />
               </Link>
               <p className="absolute bottom-3 right-3 bg-white text-black p-2">

@@ -28,6 +28,7 @@ export default function CaseStudy3() {
               width={1000}
               height={500}
               className="h-auto w-auto px-4"
+              alt="image"
             />
           </div>
           <div className="px-4 container mx-auto md:h-[350px] md:order-2">
@@ -59,6 +60,7 @@ export default function CaseStudy3() {
               width={1000}
               height={500}
               className="h-auto w-auto"
+              alt="image"
             />
           </div>
           <div className="px-4 container mx-auto md:h-[350px] md:order-">
@@ -87,6 +89,7 @@ export default function CaseStudy3() {
               width={1000}
               height={500}
               className="h-auto w-auto overflow-hidden"
+              alt="image"
             />
           </div>
           <div className="px-4 container mx-auto md:h-[350px] md:order-2">
