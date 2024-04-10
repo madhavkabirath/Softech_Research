@@ -9,6 +9,8 @@ export default function ProgramPage() {
   return (
     <>
       <div className=" ">
+
+      
         <div className=" relative overflow-hidden">
           <div className="absolute z-10 bg-black/50 w-[100%] h-[100%]"></div>
           <Image
