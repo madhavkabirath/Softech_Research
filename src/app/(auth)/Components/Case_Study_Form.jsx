@@ -76,7 +76,7 @@ export default function Case_Study_Form() {
             />
 
           </div> */}
-        </div>
+        {/* </div> */}
 
         <div className="w-full">
           <h1 className="text-sm">Seection 2 Upload Multiple Image:</h1>
