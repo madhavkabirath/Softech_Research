@@ -10,9 +10,8 @@ export default function ProgramPage() {
     <>
       <div className=" ">
 
-      
         <div className=" relative overflow-hidden">
-          <div className="absolute z-10 bg-black/50 w-[100%] h-[100%]"></div>
+          <div className="absolute z-10 bg-black/50 w-[100%] h-[100%]">testing</div>
           <Image
             src="/images/banner1.jpg"
             width={1000}
