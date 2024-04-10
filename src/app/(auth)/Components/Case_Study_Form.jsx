@@ -67,14 +67,14 @@ export default function Case_Study_Form() {
         </div>
         <div>
           <h1>Section two</h1>
-          <div>
+{/*           <div>
             <h1>Section 2 Description:</h1>
             <CKEditor
               editor={ClassicEditor}
               data={editorData}
               onChange={handleEditorChange}
             />
-          </div>
+          </div> */}
         </div>
         <div className="w-full">
           <h1 className="text-sm">Seection 2 Upload Multiple Image:</h1>
@@ -87,14 +87,14 @@ export default function Case_Study_Form() {
         </div>
         <div>
           <h1>Section Three</h1>
-          <div>
+{/*           <div>
             <h1>Section 3 Description:</h1>
             <CKEditor
               editor={ClassicEditor}
               data={editorData}
               onChange={handleEditorChange}
             />
-          </div>
+          </div> */}
         </div>
         <div className="w-full">
           <h1 className="text-sm">Seection 3 Upload Multiple Image:</h1>
