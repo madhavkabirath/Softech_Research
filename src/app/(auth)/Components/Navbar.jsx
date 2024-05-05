@@ -10,6 +10,8 @@ const Navbar = () => {
             <Link href="/">
               <h1 className="flex items-center">
                 <Image
+                  width={1000}
+                  height={1000}
                   className="block lg:hidden h-8 w-auto"
                   src="/logo.svg"
                   alt="Logo"

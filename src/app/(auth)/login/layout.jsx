@@ -10,7 +10,7 @@ export default function RootLayout({ children }) {
     <html lang="en">
       <body className="">
         <div>
-          <Navbar />
+          {/* <Navbar /> */}
         </div>
         <div className="md:ml-56">
         {children}

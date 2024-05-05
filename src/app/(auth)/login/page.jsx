@@ -1,16 +1,36 @@
-"use client";
+"use client"
 import React, { useState } from "react";
-import Head from "next/head";
+import axios from "axios";
+import { useRouter } from "next/navigation";
 
 const LoginPage = () => {
+  const router = useRouter();
   const [email, setEmail] = useState("");
   const [password, setPassword] = useState("");
 
-  const handleSubmit = (e) => {
+  const handleSubmit = async (e) => {
     e.preventDefault();
 
-    console.log("Email:", email);
-    console.log("Password:", password);
+    try {
+      
+      const response = await axios.post("https://sric.onrender.com/api/v1/auth/login", {
+        email,
+        password,
+      });
+
+      // Handle the successful response
+      console.log(response.data);
+
+      // Assuming the API returns a token or user data, you can store it in localStorage or state
+      localStorage.setItem("token", response.data.token);
+
+     
+      router.push("/profile");
+    } catch (error) {
+     
+      console.error("Something is wrong:", error);
+     
+    }
   };
 
   return (
@@ -19,7 +39,6 @@ const LoginPage = () => {
         <h2 className="mt-6 text-center text-3xl font-extrabold text-gray-900">
           Login
         </h2>
-
         <form className="mt-8 space-y-6" onSubmit={handleSubmit}>
           <input type="hidden" name="remember" value="true" />
           <div className="rounded-md shadow-sm -space-y-px">
@@ -90,7 +109,6 @@ const LoginPage = () => {
             >
               <span className="absolute left-0 inset-y-0 flex items-center pl-3">
                 {/* Heroicon name: lock-closed */}
-               
               </span>
               Login in
             </button>

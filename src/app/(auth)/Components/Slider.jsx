@@ -1,6 +1,8 @@
 "use client";
 import Link from "next/link";
-import React, { useState } from "react";
+import axios from "axios";
+import { urls } from "@/services/service";
+import React, { useEffect, useState } from "react";
 import { FaChevronRight } from "react-icons/fa";
 import { FaHome } from "react-icons/fa";
 import { FaPlus } from "react-icons/fa";
@@ -20,6 +22,30 @@ export default function Slider() {
   const handleCancelDelete = () => {
     setShowDeleteModal(false);
   };
+  const [sliderData, setSliderData] = useState([])
+  useEffect(() => {
+    const fetchSliderData = async () => {
+      try {
+        const token = 'eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VySWQiOiI2NjJhNDE5NTEyNmUyNzRkYjZhZTY3NzEiLCJpYXQiOjE3MTQ2NDc4ODYsImV4cCI6MTcxNDczNDI4Niwic3ViIjoiNjYyYTQxOTUxMjZlMjc0ZGI2YWU2NzcxIn0.ry7xXjCHKok1WaG9g-9Dn9xvIXKYFd9TPTz9PR-lT7I';
+  
+        const response = await axios.get('https://sric.onrender.com/api/v1/banner?page=1&limit=10', {
+          headers: {
+            Authorization: `Bearer ${token}`,
+          },
+        });
+
+      console.log(response, "hellores")
+  
+        
+        console.log(response.data, 'data');
+      } catch (error) {
+        console.error('Error fetching slider data:', error);
+      }
+    };
+  
+    fetchSliderData();
+  }, []);
+  
   return (
     <div className=" ">
       <div className="flex row gap-2 mx-4 my-4 text-blue-500">
