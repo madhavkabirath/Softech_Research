@@ -18,10 +18,9 @@ const LoginPage = () => {
         password,
       });
 
-      // Handle the successful response
+      
       console.log(response.data);
 
-      // Assuming the API returns a token or user data, you can store it in localStorage or state
       localStorage.setItem("token", response.data.token);
 
      
@@ -110,7 +109,7 @@ const LoginPage = () => {
               <span className="absolute left-0 inset-y-0 flex items-center pl-3">
                 {/* Heroicon name: lock-closed */}
               </span>
-              Login in
+              Login
             </button>
           </div>
         </form>
